@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/DeclareMM/src" modelPluginID="DeclareMM" modelName="Declare"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="5.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>../Declare.ecore</foreignModel>
+  <genPackages prefix="" disposableProviderFactory="true" ecorePackage="Declare.ecore#/">
+    <genClasses ecoreClass="Declare.ecore#//DeclareModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Declare.ecore#//DeclareModel/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Declare.ecore#//DeclareModel/containsActivity"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Declare.ecore#//DeclareModel/containsTemplate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Declare.ecore#//DeclareModel/containsConnection"/>
+    </genClasses>
+    <genClasses ecoreClass="Declare.ecore#//Activity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Declare.ecore#//Activity/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Declare.ecore#//Template">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Declare.ecore#//Template/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Declare.ecore#//Template/ltlExpression"/>
+    </genClasses>
+    <genClasses ecoreClass="Declare.ecore#//ChoiceTemplate"/>
+    <genClasses ecoreClass="Declare.ecore#//NegationTemplate"/>
+    <genClasses ecoreClass="Declare.ecore#//RelationTemplate"/>
+    <genClasses ecoreClass="Declare.ecore#//ExistenceTemplate"/>
+    <genClasses ecoreClass="Declare.ecore#//Connection">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Declare.ecore#//Connection/templateConnection"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Declare.ecore#//Connection/activityConnection"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
